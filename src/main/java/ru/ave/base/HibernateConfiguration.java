@@ -2,9 +2,11 @@ package ru.ave.base;
 
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ComponentScan("ru.ave.base")
 public class HibernateConfiguration {
 
     @Bean
